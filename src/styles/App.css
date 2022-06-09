@@ -1,0 +1,131 @@
+
+ * {
+	 margin: 0;
+	 padding: 0;
+}
+
+
+
+.img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.imgs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.imgs h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.gfg {
+  margin: 3%;
+  position: relative;
+
+}
+
+.first-txt {
+  position: absolute;
+
+}
+
+
+
+
+ body {
+	 font-family: "Kanit", sans-serif;
+	 background-color:rgb(23, 21, 135);
+   /* background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210814/pngtree-blue-purple-simple-gradient-background-image_760572.jpg"); */
+   /* background-repeat: no-repeat; */
+   color: rgb(4, 4, 4);
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 text-align: center;
+}
+ h1, h2 {
+	 margin: 2rem 0;
+	 font-weight: 400;
+	 color: white;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ main {
+	 display: flex;
+	 flex-direction: row-reverse;
+	 /* border: 1px solid rgb(55, 13, 207); */
+	 align-items: flex-start;
+	 width: fit-content;
+}
+ section {
+	 display: flex;
+	 width: 70rem;
+   background-color: rgb(252, 253, 254);
+	 margin-bottom: 2rem;
+   justify-content: space-around;
+   border-radius: 0.5rem;
+
+}
+ .button {
+	 border: 1px solid gold;
+	 text-transform: uppercase;
+	 width: fit-content;
+	 padding: 0.3rem 1.5rem;
+	 background-color: rgb(87, 72, 172);
+	 border-color: rgb(49, 5, 244);
+	 color: rgb(248, 248, 253);
+	 font-weight: 500;
+	 font-family: "Kanit", sans-serif;
+	 border-radius: 0.25rem;
+	 font-size: 1rem;
+	 margin-right: 0.25rem;
+}
+ .button:hover {
+	 background-color: #2ec1ac;
+	 border-color: #2ec1ac;
+	 cursor: pointer;
+}
+ .button:focus {
+	 outline: none;
+	 border-color: #2ec1ac;
+	 background-color: #2ec1ac;
+	 color: white;
+}
+ .button.addTask {
+	 font-size: 3rem;
+	 padding: 0 0 0 0;
+	 border-radius: 50%;
+	 width: 2.5rem;
+	 height: 2.5rem;
+	 line-height: 1rem;
+	 margin-top: 2rem;
+}
+ .button.moveTask {
+	 font-size: 1.5rem;
+	 padding: 0.5rem 0.5rem;
+	 margin-bottom: 0;
+	 line-height: 1rem;
+}
+ .button.delete {
+	 background-color: pink;
+	 border-color: pink;
+}
+ .button.delete:hover {
+	 background-color: red;
+	 border-color: red;
+}
+ @media only screen and (max-width: 75rem) {
+	 section {
+		 width: 100%;
+		 flex-direction: column;
+	}
+}
+ 
